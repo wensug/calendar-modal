@@ -1,0 +1,53 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name-title {
+  cursor: pointer;
+  margin: 16px 18px;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+}
+
+.bb-logo {
+  cursor: pointer;
+  height: 66px;
+  width: 97px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  .name-title {
+    text-align: center;
+  }
+
+  .bb-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 8px;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -72px;
+  }
+}
