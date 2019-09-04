@@ -1,14 +1,31 @@
 import React from "react";
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 import "./Checkout.css";
+
 
 class Checkout extends React.Component {
   constructor() {
     super();
     this.state = {
-      InitialDate: ""
+      startDate: new Date('08/14/2019'),
+      datePickerIsOpen: false
     };
   }
 
+  handleChangeDate(date) {
+      this.setState({
+          startDate: date
+      });
+  }
+
+  openDatePicker(){
+      this.setState({
+          datePickerIsOpen: !this.state.datePickerIsOpen
+      });
+  }
+
+  
   render() {
     return (
       <div className="section">
@@ -20,7 +37,14 @@ class Checkout extends React.Component {
               <p className='tag-free-delivery'>Delivery is always free</p>
             </div>
             <div className="button">
-              <button>Change</button>
+              <button onClick={() => this.openDatePicker()}>Change</button>
+              <DatePicker
+                selected={this.state.startDate}
+                onChange={(e) => this.handleChangeDate(e)}
+                open={this.state.datePickerIsOpen}
+                onClickOutside={() => this.openDatePicker()}
+                dateFormat='dd'
+              />
             </div>
           </div>
         </div>
