@@ -11,7 +11,6 @@ class Checkout extends React.Component {
     super();
     this.state = {
       startDate: new Date('08/14/2019'),
-    //   datePickerIsOpen: false
     };
   }
 
@@ -19,16 +18,8 @@ class Checkout extends React.Component {
       this.setState({
           startDate: date
       });
+      console.log(date)
   }
-
-//   openDatePicker(){
-//       this.setState({
-//           datePickerIsOpen: !this.state.datePickerIsOpen
-//       });
-//   }
-
-
-            //   <button onClick={() => this.openDatePicker()}>Change</button>
   
   render() {
     return (
@@ -43,12 +34,10 @@ class Checkout extends React.Component {
               <DatePicker
                 selected={this.state.startDate}
                 onChange={(e) => this.handleChangeDate(e)}
-                // open={this.state.datePickerIsOpen}
-                // onClickOutside={() => this.openDatePicker()}
                 customInput={<Deliverybtn/>}
-                dateFormat='dd'
-                // monthsShown={1}
+                dateFormat='dd MMM dd'
                 minDate={new Date('08/01/2019')}
+                withPortal
                 // maxDate={addMonths(new Date('07/31/2019'), 1)}
 
               />

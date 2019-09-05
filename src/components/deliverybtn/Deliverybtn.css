@@ -2,8 +2,9 @@
   border: 2px solid #1d6c93;
   border-radius: 4px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-.open-calendarbtn {
+.delivery-open-calendarbtn {
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,15 +14,33 @@
   width: 100%;
 }
 
-.open-calendarbtn a {
+.delivery-flex {
   background: white;
-  padding: 1em;
-  font-size: 18px;
-  margin: 0.3em;
+  padding: 0.4em;
+  margin: auto;
   color: #1d6c93;
   text-decoration: none;
   flex-grow: 1;
   text-align: center;
+}
+
+.delivery-selected-date {
+  font-size: 20px;
+  text-align: left;
+  margin-right: 1em;
+}
+
+.delivery-earliest {
+  display: flex;
+  background-color: #ecf4f9;
+  border-radius: 0.2em;
+  text-align: left;
+  font-size: 18px;
+  margin: -0.5em 2em 0 0;
+  padding: 0 0.5em;
+}
+.van-img {
+  margin-right: 0.5em
 }
 
 @media screen and (max-width: 600px) {
