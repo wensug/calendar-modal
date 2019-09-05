@@ -35,7 +35,7 @@ class Checkout extends React.Component {
                 selected={this.state.startDate}
                 onChange={(e) => this.handleChangeDate(e)}
                 customInput={<Deliverybtn/>}
-                dateFormat='dd MMM dd'
+                dateFormat='dd'
                 minDate={new Date('08/01/2019')}
                 withPortal
                 // maxDate={addMonths(new Date('07/31/2019'), 1)}

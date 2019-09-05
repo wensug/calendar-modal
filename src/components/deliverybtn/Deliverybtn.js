@@ -29,9 +29,9 @@ class Deliverybtn extends React.Component {
             <div className="delivery-flex">
               <div>
                 <span className="delivery-day" >{this.props.value}</span>
-                <img src={calendar} alt={"calendar"} />
+                <img className="calendar-img"src={calendar} alt={"calendar"} />
               </div>
-              <p>Change</p>
+              <p className='delivery-change'>Change ></p>
             </div>
           </div>
         </button>
