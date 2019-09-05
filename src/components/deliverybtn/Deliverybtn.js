@@ -7,6 +7,7 @@ class Deliverybtn extends React.Component {
   getDate(date) {
     let day = new Date(date);
     let dd = day.getDate();
+    if (dd < 10) dd = "0" + dd;
     return dd;
   }
 
