@@ -13,8 +13,12 @@
 }
 .tag-free-delivery {
   font-size: 20px;
-  margin-bottom: 1em;
+  margin: -0.5em 7em 1em 0;
+  padding: 0.5em;
   background-color: #e7e6e4;
+  border-radius: 0.2em;
+  text-align: left;
+
 }
 
 @media screen and (max-width: 600px) {

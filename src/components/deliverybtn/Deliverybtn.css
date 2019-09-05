@@ -63,10 +63,10 @@
 
 .delivery-calendar-change { 
   background-color: #c9dbe8;
-  border: none;
-  margin: 0;
-  display: inline-block;
-  border-bottom-left-radius: 4em;
-  border-top-left-radius: 4em;
-  height: 6em;
+  /* margin: 0; */
+  /* display: inline-block; */
+  border-bottom-left-radius: 25%;
+  border-top-left-radius: 25%;
+  height: 6.5em;
+  border-collapse: separate;
 }   
