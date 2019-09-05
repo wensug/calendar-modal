@@ -30,8 +30,9 @@ class Deliverybtn extends React.Component {
               <div>
                 <span className="delivery-day" >{this.props.value}</span>
                 <img className="calendar-img"src={calendar} alt={"calendar"} />
+                <p className='delivery-change'>Change ></p>
               </div>
-              <p className='delivery-change'>Change ></p>
+              
             </div>
           </div>
         </button>

@@ -55,28 +55,8 @@
   height: 2.5rem;
 }
 
-.delivery-change{
+.delivery-change {
   font-size: 20px;
   margin: 0 0.1em 0;
   text-decoration-line: underline;
-
 }
-/* @media screen and (max-width: 600px) {
-  .delivery-open-calendarbtn {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .delivery-flex {
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .deliverybtn {
-    margin-right: 3em;
-    margin-left: -1em;
-    padding: 0px;
-  }
-} */
