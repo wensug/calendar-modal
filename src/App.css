@@ -1,45 +1,22 @@
- h1, h2, h3, h4, h5, h6 {
-    line-height: 1em;
-  }  
-  
-  h1 {
-      font-size: 28px
-  }
-  
-  h3 {
-    font-size: 40px;
-    margin-top: 2em;
-    margin-bottom: 0;
-  } 
-  
-  .section {
-    min-height: 100vh;
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-  
-  body {
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 20px;
-    color:white;
-    background-color: #1D6C93;
-    scroll-behavior: smooth;
-  }
-  
-  .container {
-    min-height: calc(100vh - 72px);
-    margin-top: 72px;
-  }
-  
-  .row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
+.section {
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container {
+  min-height: calc(100vh - 72px);
+  margin-top: 72px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}

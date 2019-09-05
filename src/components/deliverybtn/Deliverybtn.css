@@ -1,5 +1,5 @@
 .deliverybtn {
-  border: 2px solid #1d6c93;
+  border: 2px transparent;
   border-radius: 4px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -32,7 +32,7 @@
 
 .delivery-earliest {
   display: flex;
-  background-color: #ecf4f9;
+  background-color: #EEF7F1;
   border-radius: 0.2em;
   text-align: left;
   font-size: 18px;

@@ -1,4 +1,28 @@
 body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  color: white;
+  background-color: #1d6c93;
+  scroll-behavior: smooth;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 40px;
+  margin-top: 2em;
+  margin-bottom: 0;
 }
 
