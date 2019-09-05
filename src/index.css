@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "MyFontBB";
+  src: url("./fonts/CooperHewitt-Bold.woff") format("woff"),
+    url("./fonts/GT-Pressura-Regular.woff") format("woff"),
+    url("./fonts/GTPressuraMono.woff") format("woff");
+}
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "MyFontBB", Helvetica, Arial, sans-serif;
   line-height: 20px;
   color: white;
   background-color: #1d6c93;
@@ -17,7 +23,7 @@ h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 28px; 
 }
 
 h3 {
@@ -25,4 +31,3 @@ h3 {
   margin-top: 2em;
   margin-bottom: 0;
 }
-
