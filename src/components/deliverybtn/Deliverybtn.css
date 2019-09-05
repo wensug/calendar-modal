@@ -60,3 +60,13 @@
   margin: 0 0.1em 0;
   text-decoration-line: underline;
 }
+
+.delivery-calendar-change { 
+  background-color: #c9dbe8;
+  border: none;
+  margin: 0;
+  display: inline-block;
+  border-bottom-left-radius: 4em;
+  border-top-left-radius: 4em;
+  height: 6em;
+}   
