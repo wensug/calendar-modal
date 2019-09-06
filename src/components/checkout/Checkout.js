@@ -3,7 +3,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./Checkout.css";
 import Deliverybtn from "../deliverybtn/Deliverybtn";
-// import { addMonths } from 'date-fns'
 
 class Checkout extends React.Component {
   state = {
@@ -33,7 +32,6 @@ class Checkout extends React.Component {
               dateFormat="dd MMM yy"
               minDate={new Date("08/01/2019")}
               withPortal
-              // maxDate={addMonths(new Date('07/31/2019'), 1)}
             />
           </div>
         </div>

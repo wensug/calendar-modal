@@ -9,9 +9,7 @@ export default function Header() {
         <div>
           <img className="bb-logo" src={logo} alt="Butternut Box Logo" />
         </div>
-        <p className="name-title" to="/">
-          Wendy Gonzalez
-        </p>
+        <p className="name-title">Wendy Gonzalez</p>
       </div>
     </header>
   );

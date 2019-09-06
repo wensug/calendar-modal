@@ -1,9 +1,14 @@
 @font-face {
-  font-family: "MyFontBB";
-  src: url("./fonts/CooperHewitt-Bold.woff") format("woff"),
-    url("./fonts/GT-Pressura-Regular.woff") format("woff"),
-    url("./fonts/GTPressuraMono.woff") format("woff");
+  font-family: "CooperBold";
+  src: url("./fonts/CooperHewitt-Bold.woff") format("woff");
+
+  font-family: "GTPressuraRegular";
+  src: url("./fonts/GT-Pressura-Regular.woff") format("woff");
+
+  font-family: "GTPressuraMono";
+  src: url("./fonts/GTPressuraMono.woff") format("woff");
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +16,7 @@
 }
 
 body {
-  font-family: "MyFontBB", Helvetica, Arial, sans-serif;
+  font-family: "CooperBold", "GTPressuraRegular", Helvetica, Arial, sans-serif;
   line-height: 20px;
   color: white;
   background-color: #1d6c93;
@@ -31,6 +36,7 @@ h6 {
 h1 {
   font-size: 28px;
   text-align: left;
+  font-family: "CooperBold";
 }
 
 h3 {

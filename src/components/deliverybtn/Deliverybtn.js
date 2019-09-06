@@ -2,25 +2,9 @@ import React from "react";
 import "./Deliverybtn.css";
 import van from "../../images/van.svg";
 import calendar from "../../images/calendar.svg";
+import { getFormatedDate, getDate } from "../../utils/dateHelper";
 
 class Deliverybtn extends React.Component {
-  getDate(date) {
-    let day = new Date(date);
-    let dd = day.getDate();
-    if (dd < 10) dd = "0" + dd;
-    return dd;
-  }
-
-  getFormatedDate(dateStr) {
-    let date = new Date(dateStr);
-    let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
-    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    let dayWeek = days[date.getDay()];
-    let mm = months[date.getMonth()];
-    let dd = date.getDate();
-    return (`${dayWeek} ${mm} ${dd}`)
-  }
-
   render() {
     let deliveryDate = this.props.value;
     return (
@@ -34,19 +18,19 @@ class Deliverybtn extends React.Component {
           <div className="delivery-open-calendarbtn">
             <div className="delivery-flex">
               <p className="delivery-selected-date">
-                {this.getFormatedDate(deliveryDate)}
+                {getFormatedDate(deliveryDate)}
               </p>
               <div className="delivery-earliest">
                 <img className="van-img" src={van} alt="van" />
                 <span>Earliest delivery</span>
               </div>
             </div>
-            <div className="delivery-flex">
+            <div className="delivery-flex-calendar">
               <div className="delivery-calendar-change">
-                <span className="delivery-day">
-                  {this.getDate(deliveryDate)}
-                </span>
-                <img className="calendar-img" src={calendar} alt="calendar" />
+                <div className="delivery-calendar-change-image">
+                  <span className="delivery-day">{getDate(deliveryDate)}</span>
+                  <img className="calendar-img" src={calendar} alt="calendar" />
+                </div>
                 <p className="delivery-change">Change ></p>
               </div>
             </div>
