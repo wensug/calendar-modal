@@ -1,12 +1,15 @@
 @font-face {
   font-family: "CooperBold";
-  src: url("./fonts/CooperHewitt-Bold.woff") format("woff");
+  src: url("./fonts/CooperHewitt-Bold.woff") format("woff"),
+    url("./fonts/CooperHewitt-Bold.woff2") format("woff2");
 
   font-family: "GTPressuraRegular";
-  src: url("./fonts/GT-Pressura-Regular.woff") format("woff");
+  src: url("./fonts/GT-Pressura-Regular.woff") format("woff"),
+    url("./fonts/GT-Pressura-Regular.woff2") format("woff2");
 
   font-family: "GTPressuraMono";
-  src: url("./fonts/GTPressuraMono.woff") format("woff");
+  src: url("./fonts/GTPressuraMono.woff") format("woff"),
+    url("./fonts/GTPressuraMono.woff2") format("woff2");
 }
 
 * {
