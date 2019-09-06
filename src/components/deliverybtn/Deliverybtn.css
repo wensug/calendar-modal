@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
   width: 100%;
@@ -16,7 +15,7 @@
 
 .delivery-flex {
   background: white;
-  padding: 0.4em;
+  padding: 0.4em; 
   margin: auto;
   color: #1d6c93;
   text-decoration: none;
@@ -36,8 +35,8 @@
   border-radius: 0.2em;
   text-align: left;
   font-size: 18px;
-  margin: -0.6em 3em 0 0;
-  padding: 0 0.5em;
+  margin: -1em 3em 0.5em 0;
+  padding: 0.4em;
 }
 .van-img {
   margin-right: 0.5em;
@@ -46,18 +45,18 @@
 .delivery-day {
   position: absolute;
   left: 80%;
-  top: 25%;
+  top: 28%;
   font-size: 18px;
   font-weight: 450;
 }
 .calendar-img {
-  margin-top: 0;
   height: 2.5rem;
+  /* background-color: white; */
 }
 
 .delivery-change {
-  font-size: 20px;
-  margin: 0 0.1em 0;
+  font-size: 18px;
+  margin: 0.3em 0.1em 0;
   text-decoration-line: underline;
 }
 
@@ -68,5 +67,4 @@
   border-bottom-left-radius: 25%;
   border-top-left-radius: 25%;
   height: 6.5em;
-  border-collapse: separate;
 }   

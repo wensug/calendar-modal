@@ -16,7 +16,7 @@ class Deliverybtn extends React.Component {
     let days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     let dayWeek = days[date.getDay()];
-    let mm = months[date.getMonth() + 1];
+    let mm = months[date.getMonth()];
     let dd = date.getDate();
     return (`${dayWeek} ${mm} ${dd}`)
   }
